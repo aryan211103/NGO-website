@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our missions</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: url('servicesbg.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: rgb(22, 68, 95);
+            font-size: medium;
+            font-style: normal;
+            margin: 0;
+            overflow-y: auto;
+            margin-top: 0;
+            scroll-behavior: smooth;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #162938;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        .back-button:hover {
+            background-color: #fff;
+            color: #162938;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px;
+            background-color: transparent;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 200;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            text-shadow: 2px 2px 4px rgba(0, 68, 100, 0.5);
+            align-items: center;
+            margin-top: 14px;
+        }
+
+        /* Our services */
+        .mission {
+            padding: 50px 0;
+        }
+
+        .gallery-sec {
+            position: relative;
+            padding: 50px 0;
+        }
+
+        .gallery-sec .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .gallery-sec .image-container .image {
+            height: 200px;
+            width: 300px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+
+        .gallery-sec .image-container .image img {
+            height: 100%;
+            width: 100%;
+            border: 5px solid #d4d4d4;
+            object-fit: cover;
+            transition: 0.2s linear;
+        }
+
+        .gallery-sec .image-container .image:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-sec .pop-image {
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.8);
+            height: 100%;
+            width: 100%;
+            z-index: 100;
+            display: none;
+        }
+
+        .gallery-sec .pop-image span {
+            position: absolute;
+            top: 120px;
+            right: 50px;
+            font-size: 60px;
+            font-weight: bolder;
+            color: #ffffff;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        .gallery-sec .pop-image img {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 3px solid #ffffff;
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <button class="back-button" onclick="goBack()">Back</button>
+    </header>
+
+    <section class="mission" id="mission-id">
+        <div class="container">
+            <div class="heading">
+                <h2>Our Missions</h2>
+                <p>Our aim is to donate and reach <span> </span>in all parts of the world <span>and help </span> as many needy people as possible.</p>
+            </div>
+            <div class="gallery-sec">
+                <div class="container">
+                    <div class="image-container">
+                        <div class="image"><img src="servicesimg/1.jpg" alt="img"></div>
+                        <div class="image"><img src="servicesimg/2.jpg" alt="img"></div>
+                        <div class="image"><img src="servicesimg/3.jpg" alt="img"></div>
+                        <div class="image"><img src="servicesimg/4.jpg" alt="img"></div>
+                        <div class="image"><img src="servicesimg/5.jpg" alt="img"></div>
+                        <div class="image"><img src="servicesimg/6.jpg" alt="img"></div>
+                    </div>
+                </div>
+                <div class="pop-image">
+                    <span onclick="closePopImage()">&times;</span>
+                    <img src="servicesimg/1.jpg" alt="gallery-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        function closePopImage() {
+            document.querySelector('.pop-image').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

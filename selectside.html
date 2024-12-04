@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NGO or User</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+   body {
+            background: url('servicesbg.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: rgb(22, 68, 95);
+            font-size: medium;
+            font-style: normal;
+            margin: 0;
+            overflow-y: auto;
+            margin-top: 0;
+            scroll-behavior: smooth;
+        }
+  .container {
+    margin-top: 100px;
+    text-align: center;
+  }
+  .image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .image-wrapper img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 0 20px;
+    border: 5px solid #fff;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .image-wrapper img:hover {
+    transform: scale(1.1);
+  }
+  .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .btn-wrapper .btn {
+    width: 150px;
+    font-size: 1.2em;
+    background-color: #031930; /* Same color for both buttons */
+    color: #fff;
+    border-color: #031930;
+    margin: 0 10px; /* Add space between buttons */
+    border-radius: 20px; /* Make buttons more rounded */
+  }
+  .btn-wrapper .btn:hover {
+    background-color: #285e78; /* Darken button color on hover */
+    border-color: #285e78;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="image-wrapper">
+    <img src="ngoside.jpg" alt="NGO" class="img-fluid">
+    <img src="imgrhs.png" alt="User" class="img-fluid">
+  </div>
+  <div class="btn-wrapper">
+    <button type="button" class="btn btn-primary">NGO Side</button>
+    <button type="button" class="btn btn-primary">Donator Side</button>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

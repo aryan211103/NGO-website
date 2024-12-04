@@ -1,0 +1,163 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <img src="logo.jpg.png" alt="Your Logo" class="logo">
+    <!-- Link to your existing CSS file -->
+    <link rel="stylesheet" href="style (1).css">
+
+    <!-- Add your stylesheets and other meta tags here if needed -->
+    
+    <!-- Add styles specific to the about page -->
+    <style>
+        body {
+            background: url('aboutus.jpg') no-repeat;
+            background-size: cover;
+            background-position: top;
+            background-color: rgb(22, 68, 95);
+            font-size: medium;
+            font-style: normal;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Add more styles as needed for your content */
+        header {
+    text-align: center;
+    padding: 30px;
+    background-color: transparent;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-shadow: 2px 2px 4px rgba(0, 68, 100, 0.5);
+    align-items: center; /* Center items vertically */
+}
+
+
+h1 {
+    margin: 0;
+}
+
+h1:before,
+h1:after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background-color: #fff;
+    margin: 0 10px;
+    align-items: center;
+}
+
+h1:before {
+    margin-left: 0;
+}
+
+h1:after {
+    margin-right: 0;
+}
+.logo{
+    width: 10%;
+    height: 10%;
+    margin-left: -20%;
+    margin-top: -40%;
+    position: fixed;
+     object-fit: cover;
+
+
+}
+
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #162938;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            
+        }
+          .back-button:hover {
+          background-color: #fff;
+          color: #162938;
+}
+
+        section {
+            padding: 30px;
+            text-align: center;
+            display: flex;
+            max-width: 800px;
+            align-items: left;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: -14%;
+
+        }
+
+        .about-content{
+            font-size: 1em;
+            margin-top: 20px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            line-height: 1.5;
+            text-align: left;
+            align-items: left;
+
+        
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin-right: 10px;
+            color: transparent;
+            object-fit: cover;
+
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- You can include a navigation bar or header for the about page if needed -->
+        <span class="back-button" onclick="goBack()">Back</span>
+        <body id="Services">
+        
+        <title>NGO-NEEDS</title>
+        <h1>About Us</h1>
+    </header>
+
+    <section>
+        <p>Ngo-needs is a platform that allows the user to donate commodities based on the need of the respective NGO’s.
+             Donating to such NGOs ensures that resources are used effectively and go directly to those in need. 
+             A donation portal is a platform that allows user to donate commodities on the basis of the need of the respective NGO’s. 
+            Previously we were required to visit each NGO and ask them about their requirements, 
+            but now this problem can be easily solved by visiting a website which has a collection of NGO’s and their requirements. 
+            Also this is a huge platform for Donors as they have the opportunity to make a meaningful impact on various causes, ranging from education and healthcare to environmental conservation and disaster relief</p>
+    </section>
+
+    <!-- Include your footer or any other relevant sections -->
+
+    <!-- Include your scripts at the end of the body if needed -->
+    <script src="script (1).js"></script>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>
